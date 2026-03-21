@@ -81,6 +81,20 @@ Content integrity is enforced at the system level:
 - **Timeline verification** — Every fact gets a verified timestamp. Time words are mapped by age (today = "just now", 1-3 days = "recently", etc.).
 - **No AI filler** — System prompt blocks generic phrases like "in today's world" / "it's worth noting".
 
+### Remotion Video Generation
+
+Claude World Studio includes the **remotion-best-practices** skill, enabling the AI agent to create professional product animations and motion graphics directly from a prompt.
+
+**Capabilities:**
+- Spring, easing, and interpolation animations via Remotion's frame-based timeline
+- Scene sequencing with `<Sequence>` and `<AbsoluteFill>`
+- Text animations, particle effects, network diagrams, and bounding-box overlays
+- Renders to MP4 via `npx remotion render` (1080p or 720p)
+
+**Example:** Ask Claude to create a product ad, and it will generate a full Remotion composition, render it, and make the MP4 available for download.
+
+See `demo/remotion-src/` for the source of the included 30-second EnGenius AI surveillance product animation (`demo/engenius-ad.mp4`).
+
 ## Architecture
 
 ```

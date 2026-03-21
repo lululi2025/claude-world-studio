@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.4.0] - 2026-03-21
+
+### Added
+
+- **Remotion video generation** — `remotion-best-practices` skill installed from [remotion-dev/skills](https://github.com/remotion-dev/skills); Claude can now create frame-perfect product animations and motion graphics on demand
+  - Spring, easing, interpolation, scene sequencing, text animations, particle effects
+  - Renders to MP4 via `npx remotion render`; output is downloadable from `demo/download.html`
+- **Demo animations** — `demo/remotion-demo.mp4` (Remotion intro) and `demo/engenius-ad.mp4` (EnGenius AI Cloud Surveillance 30s ad, 5 scenes, 1280×720 30fps)
+- **Remotion source examples** — `demo/remotion-src/` contains the full source for the demo compositions (`Intro.tsx`, `EnGenius.tsx`, `Root.tsx`)
+
 ## [1.1.0] - 2026-03-15
 
 ### Added
